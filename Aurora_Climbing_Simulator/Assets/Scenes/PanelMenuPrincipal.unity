@@ -1965,7 +1965,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.75
+      value: 4.581
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1973,7 +1973,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.385
+      value: -1.994
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4544,7 +4544,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4f430425110a8a9469aeff44bdcd96d9, type: 2}
+  - {fileID: 2100000, guid: a69a46b49d571d74d85e0e2f70662bfa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4813,7 +4813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: d6e192b5359c267428b5fe9a29ea1010, type: 2}
+  m_Material: {fileID: 2100000, guid: 92ddc779d52cd6640ba55503804bf801, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -15076,8 +15076,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 2c59325cff8447d47899d7e518a87833, type: 2}
-  m_Color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
+  m_Material: {fileID: 2100000, guid: 4112ef671015ebe4ea310079da739bcd, type: 2}
+  m_Color: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.4627451}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -15107,7 +15107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 2c59325cff8447d47899d7e518a87833, type: 2}
-  m_Color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
+  m_Color: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.4627451}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -15137,7 +15137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 2c59325cff8447d47899d7e518a87833, type: 2}
-  m_Color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
+  m_Color: {r: 0.2735849, g: 0.2735849, b: 0.2735849, a: 0.4627451}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -15167,7 +15167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 2c59325cff8447d47899d7e518a87833, type: 2}
-  m_Color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
+  m_Color: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 0.4627451}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
