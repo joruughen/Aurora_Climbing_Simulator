@@ -3,8 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
-    public void OnInicioPressed(string name)
+    public string sceneName;
+
+    public void OnInicioPressed(bool isOn)
     {
-        SceneManager.LoadScene(name);
+        if (isOn)
+        {
+            SceneManager.LoadScene(sceneName);
+        }
     }
 }
