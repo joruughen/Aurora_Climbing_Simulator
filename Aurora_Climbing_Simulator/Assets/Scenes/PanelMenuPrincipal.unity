@@ -4583,28 +4583,40 @@ PrefabInstance:
     m_TransformParent: {fileID: 1311340183}
     m_Modifications:
     - target: {fileID: 188438165202829920, guid: 292035910f8781541aeb438db140bd72, type: 3}
+      propertyPath: m_IsOn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 188438165202829920, guid: 292035910f8781541aeb438db140bd72, type: 3}
+      propertyPath: toggleTransition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 188438165202829920, guid: 292035910f8781541aeb438db140bd72, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 188438165202829920, guid: 292035910f8781541aeb438db140bd72, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 188438165202829920, guid: 292035910f8781541aeb438db140bd72, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1266703378}
     - target: {fileID: 188438165202829920, guid: 292035910f8781541aeb438db140bd72, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 188438165202829920, guid: 292035910f8781541aeb438db140bd72, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ApplyTheme
+      value: set_name
       objectReference: {fileID: 0}
     - target: {fileID: 188438165202829920, guid: 292035910f8781541aeb438db140bd72, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Oculus.Interaction.UIThemeManager, Oculus.Interaction.Samples
+      value: MenuController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 188438165202829920, guid: 292035910f8781541aeb438db140bd72, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Climbing_Test
       objectReference: {fileID: 0}
     - target: {fileID: 188438165202829920, guid: 292035910f8781541aeb438db140bd72, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -4842,7 +4854,10 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 2010125156787955810, guid: 292035910f8781541aeb438db140bd72, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8427117777238694044, guid: 292035910f8781541aeb438db140bd72, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1266703378}
   m_SourcePrefab: {fileID: 100100000, guid: 292035910f8781541aeb438db140bd72, type: 3}
 --- !u!224 &750934438 stripped
 RectTransform:
@@ -6612,6 +6627,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244480169}
   m_CullTransparentMesh: 1
+--- !u!1 &1266703374 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8427117777238694044, guid: 292035910f8781541aeb438db140bd72, type: 3}
+  m_PrefabInstance: {fileID: 750934437}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1266703378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266703374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32c8b29046cdcb743aaf7eb09a3edeb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1279207054
 GameObject:
   m_ObjectHideFlags: 0
