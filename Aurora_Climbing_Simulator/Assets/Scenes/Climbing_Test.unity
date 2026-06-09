@@ -15221,6 +15221,11 @@ MonoBehaviour:
   _handAligment: 1
   _handGrabPoses:
   - {fileID: 2050776547}
+--- !u!4 &849089944 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3903482225804038112, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
+  m_PrefabInstance: {fileID: 1662877788}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &850809606 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1697441908606936625, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
@@ -18639,7 +18644,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4710430941909883949, guid: 688f11fe7230eab47a55fd15e7e8979d, type: 3}
   m_PrefabInstance: {fileID: 1146296946273365631}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1146296946273365632}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a42e62c21e0155740b0a44aafba446c6, type: 3}
@@ -42329,8 +42334,44 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 770212049517897525, guid: 688f11fe7230eab47a55fd15e7e8979d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1146296946273365633}
   m_SourcePrefab: {fileID: 100100000, guid: 688f11fe7230eab47a55fd15e7e8979d, type: 3}
+--- !u!1 &1146296946273365632 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 770212049517897525, guid: 688f11fe7230eab47a55fd15e7e8979d, type: 3}
+  m_PrefabInstance: {fileID: 1146296946273365631}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1146296946273365633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146296946273365632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8c8b5bd9e2c2b640a7e1ce9e1d7ed1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _climbingLocomotor: {fileID: 1033591291}
+  _firstPersonLocomotor: {fileID: 182462861}
+  _locomotionConnection: {fileID: 1662877795}
+  _playerRoot: {fileID: 849089944}
+  _leftHandAnchor: {fileID: 387489579}
+  _rightHandAnchor: {fileID: 387489578}
+  _swingStrength: 1
+  _gravityStrength: 6
+  _damping: 2
+  _maxSwingSpeed: 3
+  _releaseVelocityMultiplier: 0.5
+  _maxReleaseVelocity: 4
+  _minPendulumDistance: 0.2
+  _comfortMode: 1
+  _verticalSwingFraction: 0.4
+  _pendulumEnabled: 1
 --- !u!114 &1221216376523665730
 MonoBehaviour:
   m_ObjectHideFlags: 0
