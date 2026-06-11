@@ -11882,9 +11882,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1846337310247562240, guid: d2554337f937e4a428421cf271784192, type: 3}
       insertIndex: -1
       addedObject: {fileID: 579045796}
-    - targetCorrespondingSourceObject: {fileID: 1846337310247562240, guid: d2554337f937e4a428421cf271784192, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 579045795}
   m_SourcePrefab: {fileID: 100100000, guid: d2554337f937e4a428421cf271784192, type: 3}
 --- !u!1 &579045792 stripped
 GameObject:
@@ -11896,18 +11893,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6523384577642343830, guid: d2554337f937e4a428421cf271784192, type: 3}
   m_PrefabInstance: {fileID: 579045790}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &579045795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579045792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!64 &579045796
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21090,7 +21075,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1166687391}
-  - component: {fileID: 1166687392}
   m_Layer: 0
   m_Name: NavMeshLink
   m_TagString: Untagged
@@ -21113,18 +21097,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1303152182}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!114 &1166687392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1166687390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6eeb5dc026fdf4b488bc7ae0138ab719, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1171272082
 GameObject:
   m_ObjectHideFlags: 0
@@ -21307,7 +21279,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1175325900}
-  - component: {fileID: 1175325901}
   m_Layer: 1
   m_Name: LocomotionHelpers
   m_TagString: Untagged
@@ -21335,18 +21306,6 @@ Transform:
   - {fileID: 577249387}
   m_Father: {fileID: 1295181042}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1175325901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1175325899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1178406991
 GameObject:
   m_ObjectHideFlags: 0
@@ -21878,7 +21837,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1244261176}
-  - component: {fileID: 1244261177}
   m_Layer: 0
   m_Name: NavMeshLink
   m_TagString: Untagged
@@ -21901,18 +21859,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1303152182}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1244261177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1244261175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6eeb5dc026fdf4b488bc7ae0138ab719, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1244480169
 GameObject:
   m_ObjectHideFlags: 0
@@ -23307,7 +23253,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1303152182}
-  - component: {fileID: 1303152180}
   m_Layer: 0
   m_Name: NavMeshes
   m_TagString: Untagged
@@ -23315,18 +23260,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1303152180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1303152179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1303152182
 Transform:
   m_ObjectHideFlags: 0
