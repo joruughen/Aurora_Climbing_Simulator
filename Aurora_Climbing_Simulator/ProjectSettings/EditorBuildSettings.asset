@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GrabbableTest_Minimal.unity
-    guid: 2b0534664dca28e44beff5f8350a71c9
+    path: Assets/Scenes/CubeGrab_Quest2.unity
+    guid: d8cbe657266b1bd488a20338c9eb4d8a
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 3d07718a3d5b767449e939d33784c063, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 2469fe3059988944fbc5b07ac36f21f0, type: 2}
