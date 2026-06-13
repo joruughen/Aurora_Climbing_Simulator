@@ -18639,7 +18639,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4710430941909883949, guid: 688f11fe7230eab47a55fd15e7e8979d, type: 3}
   m_PrefabInstance: {fileID: 1146296946273365631}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1146296946273365632}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a42e62c21e0155740b0a44aafba446c6, type: 3}
@@ -29407,6 +29407,10 @@ PrefabInstance:
     - target: {fileID: 5801245061754409418, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
       propertyPath: _jumpForce
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5801245061754409418, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
+      propertyPath: _airDamping
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 5801245061754409418, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
       propertyPath: _coyoteTime
@@ -42329,8 +42333,55 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 770212049517897525, guid: 688f11fe7230eab47a55fd15e7e8979d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1146296946273365633}
   m_SourcePrefab: {fileID: 100100000, guid: 688f11fe7230eab47a55fd15e7e8979d, type: 3}
+--- !u!1 &1146296946273365632 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 770212049517897525, guid: 688f11fe7230eab47a55fd15e7e8979d, type: 3}
+  m_PrefabInstance: {fileID: 1146296946273365631}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1146296946273365633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146296946273365632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8864dddf793e4ad388f0fbf3518cf14f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swingStrength: 1.2
+  gravityStrength: 9.81
+  damping: 0.85
+  maxSwingSpeed: 4
+  releaseVelocityMultiplier: 0.5
+  maxReleaseVelocity: 3
+  minReleaseVelocity: 0.3
+  fallGravityMultiplier: 3.5
+  normalGravityFactor: 1
+  landingSpeedThreshold: 2
+  minPendulumDistance: 0.3
+  comfortMode: 0
+  releaseSounds:
+  - {fileID: 8300000, guid: 2643175705ab40c43a8491ff1fe8e5c6, type: 3}
+  - {fileID: 8300000, guid: 3c715a33fc7cb164a88c54884250a8c8, type: 3}
+  - {fileID: 8300000, guid: 76b887853df4f6d47991bbc1f40334af, type: 3}
+  - {fileID: 8300000, guid: d5d077ceebe75814299dc50ac382b045, type: 3}
+  - {fileID: 8300000, guid: f0ebeb9e6637c2a4b9556ab14c872bad, type: 3}
+  releaseVolume: 0.6
+  landingSounds:
+  - {fileID: 8300000, guid: eaa7487f0ed2a2c4e9c41073a19edbce, type: 3}
+  - {fileID: 8300000, guid: d8a3e29b2fba7ae4b8d1d35f555e6550, type: 3}
+  - {fileID: 8300000, guid: 2d7dbbfe2a96de84199afde44002fa66, type: 3}
+  - {fileID: 8300000, guid: 98aa24e8a6d8a10408317fcd00780adf, type: 3}
+  - {fileID: 8300000, guid: 3fe1de8123262564faa1e7ef43918c6a, type: 3}
+  landingVolume: 0.9
+  pendulumEnabled: 1
 --- !u!114 &1221216376523665730
 MonoBehaviour:
   m_ObjectHideFlags: 0
