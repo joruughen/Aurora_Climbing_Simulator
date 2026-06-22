@@ -80,7 +80,7 @@ PlayerSettings:
   androidFullscreenMode: 1
   androidAutoRotationBehavior: 1
   androidPredictiveBackSupport: 1
-  androidApplicationEntry: 1
+  androidApplicationEntry: 3
   defaultIsNativeResolution: 1
   macRetinaSupport: 1
   runInBackground: 1
@@ -145,8 +145,6 @@ PlayerSettings:
   bundleVersion: 0.1
   preloadedAssets:
   - {fileID: 11400000, guid: 598fcb551697a8c4f880dc389dab073e, type: 2}
-  - {fileID: -8998641007993195148, guid: 2469fe3059988944fbc5b07ac36f21f0, type: 2}
-  - {fileID: -6173433357067369666, guid: 3d07718a3d5b767449e939d33784c063, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1

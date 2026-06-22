@@ -54,12 +54,20 @@ namespace Aurora.RouteProgress
                  "auto-resolver con Camera.main al iniciar.")]
         private Transform _heightSource;
 
+        [Header("Tiempo límite")]
+        [SerializeField]
+        [Tooltip("Si es > 0, la ruta se pierde al pasar este tiempo. Se lee de DifficultySettings al iniciar.")]
+        private float _timeLimit;
+
         [Header("Eventos (opcionales, para UI / feedback)")]
         [Tooltip("Se invoca cuando la ruta inicia.")]
         public UnityEvent OnRouteStarted = new UnityEvent();
 
         [Tooltip("Se invoca cuando la ruta se completa, con el resumen de estadísticas.")]
         public RouteResultEvent OnRouteCompleted = new RouteResultEvent();
+
+        [Tooltip("Se invoca cuando se acaba el tiempo, con el resumen de estadísticas.")]
+        public RouteResultEvent OnRouteTimedOut = new RouteResultEvent();
 
         [Tooltip("Se invoca cuando la ruta se reinicia.")]
         public UnityEvent OnRouteReset = new UnityEvent();
@@ -79,6 +87,10 @@ namespace Aurora.RouteProgress
         public float MaxHeight => _maxHeight;
         public float FinishHeight => _finishHeight;
         public int HoldsUsed => _holdsUsed;
+
+        public float TimeLimit => _timeLimit;
+        public float RemainingTime => _timeLimit > 0f ? Mathf.Max(0f, _timeLimit - GetElapsedTime()) : float.MaxValue;
+        public bool HasTimeLimit => _timeLimit > 0f;
 
         /// <summary>Altura actual del jugador (Y mundial del height source).</summary>
         public float CurrentHeight => _heightSource != null ? _heightSource.position.y : 0f;
@@ -108,14 +120,25 @@ namespace Aurora.RouteProgress
 
         private void Update()
         {
-            // Mientras la ruta está en progreso, actualizar la altura máxima alcanzada.
-            if (_state == RouteState.InProgress && _heightSource != null)
+            if (_state != RouteState.InProgress) return;
+
+            if (_heightSource != null)
             {
                 float y = _heightSource.position.y;
                 if (y > _maxHeight)
-                {
                     _maxHeight = y;
-                }
+            }
+
+            if (_timeLimit > 0f && GetElapsedTime() >= _timeLimit)
+            {
+                _endTime = _startTime + _timeLimit;
+                _finishHeight = CurrentHeight;
+                if (_finishHeight > _maxHeight) _maxHeight = _finishHeight;
+                _state = RouteState.Completed;
+
+                RouteResult result = BuildResult();
+                Debug.Log($"[RouteProgressManager] TIEMPO AGOTADO en {result.ElapsedSeconds:F2}s.", this);
+                OnRouteTimedOut.Invoke(result);
             }
         }
 
@@ -136,6 +159,7 @@ namespace Aurora.RouteProgress
             _startTime = Time.time;
             _endTime = 0f;
             _holdsUsed = 0;
+            _timeLimit = DifficultySettings.GetTimeLimit();
 
             _startHeight = CurrentHeight;
             _maxHeight = _startHeight;

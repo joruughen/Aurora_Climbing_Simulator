@@ -1,8 +1,10 @@
 using GapperGames;
 using System;
+#if UNITY_EDITOR
 using UnityEditor.Rendering;
 using UnityEditor;
 using UnityEditor.ShaderGraph.Serialization;
+#endif
 
 namespace UnityEngine.Rendering.Universal
 {

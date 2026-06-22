@@ -78,7 +78,8 @@ namespace Aurora.RouteProgress
             // contenedor visual se oculte. La escucha vive en este componente, que permanece activo.
             if (_manager != null)
             {
-                _manager.OnRouteCompleted.AddListener(Show);
+                _manager.OnRouteCompleted.AddListener(ShowCompleted);
+                _manager.OnRouteTimedOut.AddListener(ShowTimedOut);
                 _manager.OnRouteReset.AddListener(HideOnReset);
             }
             else
@@ -95,7 +96,8 @@ namespace Aurora.RouteProgress
         {
             if (_manager != null)
             {
-                _manager.OnRouteCompleted.RemoveListener(Show);
+                _manager.OnRouteCompleted.RemoveListener(ShowCompleted);
+                _manager.OnRouteTimedOut.RemoveListener(ShowTimedOut);
                 _manager.OnRouteReset.RemoveListener(HideOnReset);
             }
         }
@@ -118,10 +120,18 @@ namespace Aurora.RouteProgress
         /// <summary>True si el contenedor del panel está visible.</summary>
         private bool IsVisible => _panelRoot != null && _panelRoot.activeInHierarchy;
 
-        /// <summary>Muestra el panel y rellena las estadísticas a partir del resultado.</summary>
-        public void Show(RouteResult result)
+        public void ShowCompleted(RouteResult result)
         {
-            // Reubicar frente al jugador, a la altura de sus ojos (clave para que se vea bien en VR).
+            ShowPanel(result, "¡Ruta completada!");
+        }
+
+        public void ShowTimedOut(RouteResult result)
+        {
+            ShowPanel(result, "¡Tiempo agotado!");
+        }
+
+        private void ShowPanel(RouteResult result, string status)
+        {
             if (_placeInFrontOfCamera && _cameraTransform != null)
             {
                 Vector3 forward = _cameraTransform.forward;
@@ -137,8 +147,11 @@ namespace Aurora.RouteProgress
                 _panelRoot.SetActive(true);
             }
 
-            SetText(_statusText, "Ruta completada");
-            SetText(_timeText, "Tiempo: " + RouteProgressManager.FormatTime(result.ElapsedSeconds));
+            SetText(_statusText, status);
+            string timeInfo = "Tiempo: " + RouteProgressManager.FormatTime(result.ElapsedSeconds);
+            if (_manager != null && _manager.HasTimeLimit)
+                timeInfo += " / " + RouteProgressManager.FormatTime(_manager.TimeLimit);
+            SetText(_timeText, timeInfo);
             SetText(_startHeightText, $"Altura inicial: {result.StartHeight:F1} m");
             SetText(_finishHeightText, $"Altura final: {result.FinishHeight:F1} m");
             SetText(_maxHeightText, $"Altura máxima: {result.MaxHeight:F1} m");

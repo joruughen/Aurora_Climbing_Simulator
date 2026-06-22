@@ -43,10 +43,9 @@ namespace Aurora.RouteProgress.EditorTools
             Vector3 spawn = player != null ? player.position
                           : (hmd != null ? hmd.position : new Vector3(84.9f, 42.22f, -24.3f));
 
-            // Punto de inicio: ligeramente delante/junto al spawn. Punto final: 15 m más arriba.
             Vector3 startPos = spawn;
-            Vector3 finishPos = spawn + new Vector3(0f, 15f, 0f);
-            Vector3 panelPos = spawn + new Vector3(0f, 16.5f, 1.5f);
+            Vector3 finishPos = spawn + new Vector3(0f, 0f, 5f);
+            Vector3 panelPos = spawn + new Vector3(0f, 2f, 6.5f);
 
             // --- 2. Manager ---
             RouteProgressManager manager = Object.FindFirstObjectByType<RouteProgressManager>();
@@ -80,6 +79,10 @@ namespace Aurora.RouteProgress.EditorTools
                 box.size = new Vector3(3f, 3f, 3f);
                 start = go.AddComponent<RouteStartCheckpoint>();
             }
+            else
+            {
+                start.transform.position = startPos;
+            }
             WireCheckpoint(start, manager, player);
 
             // --- 4. Checkpoint final ---
@@ -94,19 +97,20 @@ namespace Aurora.RouteProgress.EditorTools
                 box.size = new Vector3(3f, 3f, 3f);
                 finish = go.AddComponent<RouteFinishCheckpoint>();
             }
+            else
+            {
+                finish.transform.position = finishPos;
+            }
             WireCheckpoint(finish, manager, player);
 
             // --- 4b. Cartel de feedback de INICIO (mensaje flotante + sonido) ---
-            // Solo el inicio tiene cartel ("¡Ruta iniciada!" en verde). El de fin se omite
-            // a propósito: al completar se muestra el panel de estadísticas, y un cartel
-            // "¡Ruta completada!" se solaparía con ese panel.
             EnsureFeedback(start, "RouteStartFeedback", "¡Ruta iniciada!",
-                new Color(0.3f, 1f, 0.4f), startPos + new Vector3(0f, 2.5f, 0f), hmd);
+                new Color(1f, 0.9f, 0.2f), startPos + new Vector3(0f, 2.5f, 0f), hmd);
 
             // --- 4c. Marcadores visuales (haz de luz) para ubicar los checkpoints en VR ---
-            // Verde para el inicio, dorado para el fin. Son hijos del checkpoint, sin collider.
-            EnsureBeacon(start.gameObject, new Color(0.3f, 1f, 0.4f));
-            EnsureBeacon(finish.gameObject, new Color(1f, 0.85f, 0.2f));
+            // Amarillo para el inicio, verde para el fin.
+            EnsureBeacon(start.gameObject, new Color(1f, 0.9f, 0.2f));
+            EnsureBeacon(finish.gameObject, new Color(0.3f, 1f, 0.4f));
 
             // --- 5. Panel de compleción (world-space) ---
             RouteCompletionPanel panel = Object.FindFirstObjectByType<RouteCompletionPanel>(FindObjectsInactive.Include);
@@ -339,14 +343,19 @@ namespace Aurora.RouteProgress.EditorTools
         /// </summary>
         private static void EnsureBeacon(GameObject checkpoint, Color color)
         {
-            // ¿Ya tiene un hijo "Beacon"? No duplicar.
-            if (checkpoint.transform.Find("Beacon") != null)
+            const float height = 50f;
+            const float radius = 0.5f;
+
+            Transform existing = checkpoint.transform.Find("Beacon");
+            if (existing != null)
             {
+                existing.localPosition = new Vector3(0f, height * 0.5f, 0f);
+                existing.localScale = new Vector3(radius * 2f, height * 0.5f, radius * 2f);
+                var existingMr = existing.GetComponent<MeshRenderer>();
+                if (existingMr != null)
+                    existingMr.sharedMaterial = BuildBeaconMaterial(color);
                 return;
             }
-
-            const float height = 20f;   // altura del haz (m)
-            const float radius = 0.35f; // grosor del haz (m)
 
             // Cilindro primitivo y le quitamos el collider.
             var beacon = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
