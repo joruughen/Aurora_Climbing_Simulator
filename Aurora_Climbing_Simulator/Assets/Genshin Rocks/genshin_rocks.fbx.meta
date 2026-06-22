@@ -1,0 +1,257 @@
+fileFormatVersion: 2
+guid: 6d5ab2888a267b449977a8db9efbdb1b
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Full_L_01
+    second: {fileID: 2100000, guid: e1daadd6e0493cd4c979735b8c3fcf5f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Full_L_02
+    second: {fileID: 2100000, guid: 7b90ae8740cbc574abe06a7931342e0e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Full_L_03
+    second: {fileID: 2100000, guid: c08e1554a585e524db0e13c5255451c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Full_L_04_Lod0
+    second: {fileID: 2100000, guid: 935c5d7a5ed1a8344b7eb03527d5980f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Full_L_05
+    second: {fileID: 2100000, guid: 7afd085686a0a0942b901f3f37b58910, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Full_M_01
+    second: {fileID: 2100000, guid: 3900a2756d49b024c8dc260edf10596e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Full_M_11
+    second: {fileID: 2100000, guid: 5e1b125e7d949164ea785faf8e2c4c7a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Full_S_03
+    second: {fileID: 2100000, guid: 798e8db27bbe3404382fa2ef31b8f299, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Ground_L_01
+    second: {fileID: 2100000, guid: 754af18a7dfdcb2478d72f387b7ecbc8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Default OBJ
+    second: {fileID: 2100000, guid: 98427d8d2f9a82b40b8d8997d6a46500, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Full_L_01_Diffuse
+    second: {fileID: 2800000, guid: 62bd6ee4f369016439c41964a372af4f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Full_L_01_SMBE
+    second: {fileID: 2800000, guid: c77a4284d9b187e49976a267961a244f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Full_L_02_Diffuse
+    second: {fileID: 2800000, guid: 64ef56788546e0a4cb18746cf98bd4ef, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Full_L_02_SMBE
+    second: {fileID: 2800000, guid: f2dad7a0a825f964d9c91fcd855c1dec, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Full_L_03_Diffuse
+    second: {fileID: 2800000, guid: de7888d0c44970a409359ae0d2d2ece6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Full_L_03_SMBE
+    second: {fileID: 2800000, guid: 2d40516e02288414280ba74136d49eb9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Full_L_04_Diffuse
+    second: {fileID: 2800000, guid: 82267bca2b783da49a288bff27df0dfb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Full_L_04_SMBE
+    second: {fileID: 2800000, guid: a29a57e0bfa2b874692e285c254d8cdd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Full_L_05_Diffuse
+    second: {fileID: 2800000, guid: 55a75a68fa85be14988d26ccefa1950a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Full_L_05_SMBE
+    second: {fileID: 2800000, guid: 8d2e9a21d4944e44ba8439c34fdb1810, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Full_M_01_Diffuse
+    second: {fileID: 2800000, guid: f8623e87c95f60c4a911274b59fe8bb1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Full_M_01_SMBE
+    second: {fileID: 2800000, guid: 18cb50a13ac12714cad99020d1e1161e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Full_M_11_SMBE
+    second: {fileID: 2800000, guid: dae23a350c229e24f97c316bafbf27da, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Full_S_03_Diffuse
+    second: {fileID: 2800000, guid: 77f83f9f114bdfd449bbead12bc2ea4b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Full_S_03_SMBE
+    second: {fileID: 2800000, guid: 2eb4cb01bc6784d42a6b4cd6f5412051, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Full_S_11_Diffuse
+    second: {fileID: 2800000, guid: 81a93a7a66ddee040809b2cfb640f318, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Ground_L_01_Diffuse
+    second: {fileID: 2800000, guid: ac5c105a0e88d924ea10597b5c68a52e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Ground_L_01_SMBE
+    second: {fileID: 2800000, guid: 4502453763143414da2656b3d27585b0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Ground_M_01_Diffuse
+    second: {fileID: 2800000, guid: 0b232321d7d195549a2fba308cf4b5b7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Area_Ly_Stone_CSPY_Ground_M_01_SMBE
+    second: {fileID: 2800000, guid: df082ec88f0e79a478a556ae6f4ea16d, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
