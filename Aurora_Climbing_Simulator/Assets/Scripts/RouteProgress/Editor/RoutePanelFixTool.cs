@@ -38,7 +38,7 @@ namespace Aurora.RouteProgress.EditorTools
             if (panel == null)
             {
                 Debug.LogWarning("[RoutePanelFix] No se encontró RouteCompletionPanel en la escena. " +
-                                 "Abre MainScene o ejecuta primero 'Setup In Scene'.");
+                                 "Abre MainScene_backup o ejecuta primero 'Setup In Scene'.");
             }
             else
             {

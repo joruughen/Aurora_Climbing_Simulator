@@ -23,7 +23,7 @@ namespace Aurora.RouteProgress
                     {
                         if (!isOn) return;
                         DifficultySettings.Selected = Difficulty.Principiante;
-                        SceneManager.LoadScene("MainScene");
+                        SceneManager.LoadScene("MainScene_backup");
                     });
                 }
                 else if (lower.Contains("avanzado"))
@@ -32,7 +32,7 @@ namespace Aurora.RouteProgress
                     {
                         if (!isOn) return;
                         DifficultySettings.Selected = Difficulty.Avanzado;
-                        SceneManager.LoadScene("MainScene");
+                        SceneManager.LoadScene("MainScene_backup");
                     });
                 }
                 else if (lower.Contains("intermedio"))

@@ -5,7 +5,7 @@ namespace Aurora.RouteProgress
 {
     public class DifficultySelector : MonoBehaviour
     {
-        [SerializeField] private string _mainSceneName = "MainScene";
+        [SerializeField] private string _mainSceneName = "MainScene_backup";
 
         public void OnPrincipiantePressed(bool isOn)
         {
