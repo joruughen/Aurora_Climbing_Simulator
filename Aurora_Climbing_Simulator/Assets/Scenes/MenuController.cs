@@ -18,14 +18,14 @@ public class MenuController : MonoBehaviour
     {
         if (!isOn) return;
         DifficultySettings.Selected = Difficulty.Principiante;
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("MainScene_backup");
     }
 
     public void OnAvanzadoPressed(bool isOn)
     {
         if (!isOn) return;
         DifficultySettings.Selected = Difficulty.Avanzado;
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("MainScene_backup");
     }
 
     public void OnTutorialPressed(bool isOn)

@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/DifficultySelection.unity
     guid: 66c3efcd4c8b4a6892f9ef7c42d97006
   - enabled: 1
-    path: Assets/Scenes/MainScene.unity
+    path: Assets/Scenes/MainScene_backup.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/Climbing_Test.unity
