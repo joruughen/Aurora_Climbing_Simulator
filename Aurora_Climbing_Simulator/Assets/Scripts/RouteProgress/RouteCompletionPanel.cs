@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Aurora.RouteProgress
 {
@@ -58,6 +59,12 @@ namespace Aurora.RouteProgress
         [SerializeField]
         [Tooltip("Distancia (m) frente a la cámara a la que aparece el panel.")]
         private float _distanceFromCamera = 2f;
+
+        [Header("Botón 'Volver al menú'")]
+        [SerializeField]
+        [Tooltip("Nombre de la escena del menú principal que carga el botón 'Volver al menú'. " +
+                 "Debe estar añadida en Build Settings.")]
+        private string _menuSceneName = "PanelMenuPrincipal";
 
         private void Awake()
         {
@@ -188,6 +195,21 @@ namespace Aurora.RouteProgress
             {
                 _manager.ResetRoute();
             }
+        }
+
+        /// <summary>
+        /// Handler del botón "Volver al menú". Asignar al onClick del botón del panel.
+        /// Carga la escena del menú principal (<see cref="_menuSceneName"/>).
+        /// </summary>
+        public void OnReturnToMenuButton()
+        {
+            if (string.IsNullOrEmpty(_menuSceneName))
+            {
+                Debug.LogWarning("[RouteCompletionPanel] No hay escena de menú asignada en " +
+                                 "_menuSceneName; el botón 'Volver al menú' no hará nada.", this);
+                return;
+            }
+            SceneManager.LoadScene(_menuSceneName);
         }
 
         private static void SetText(TMP_Text label, string value)

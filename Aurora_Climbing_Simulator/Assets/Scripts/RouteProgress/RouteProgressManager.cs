@@ -147,6 +147,7 @@ namespace Aurora.RouteProgress
         /// No hace nada si la ruta ya está en progreso (evita reinicios accidentales por
         /// reentradas al checkpoint inicial).
         /// </summary>
+        [ContextMenu("TEST ▸ Start Route")]
         public void StartRoute()
         {
             if (_state == RouteState.InProgress)
@@ -174,6 +175,7 @@ namespace Aurora.RouteProgress
         /// y dispara el evento de compleción. Sólo finaliza si la ruta está en progreso
         /// (no se puede completar sin haber iniciado, ni completar dos veces).
         /// </summary>
+        [ContextMenu("TEST ▸ Finish Route")]
         public void FinishRoute()
         {
             if (_state != RouteState.InProgress)
@@ -203,6 +205,7 @@ namespace Aurora.RouteProgress
         /// Reinicia la ruta a NotStarted y limpia todas las estadísticas, permitiendo
         /// volver a iniciarla desde el checkpoint inicial.
         /// </summary>
+        [ContextMenu("TEST ▸ Reset Route")]
         public void ResetRoute()
         {
             _state = RouteState.NotStarted;
