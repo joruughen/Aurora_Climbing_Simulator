@@ -10,7 +10,7 @@ namespace Aurora.RouteProgress
 
         public static float GetTimeLimit()
         {
-            return Selected == Difficulty.Avanzado ? 20f : 60f;
+            return Selected == Difficulty.Avanzado ? 120f : 600f;
         }
     }
 }
